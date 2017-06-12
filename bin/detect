@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ -d $1/etc/merchant ]; then
-  echo "Merchant keys directory detected."
+  echo "Apple Pay PHP Extension"
   exit 0
 else
   exit 1
