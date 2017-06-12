@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo "-----> Cloning applepay-php extension."
+git clone git@github.com:etsy/applepay-php.git
+cd applepay-php
+
+echo "-----> Compiling applepay-php extension."
+phpize && ./configure && make
+
+echo "-----> Installing applepay-php extension."
+sudo make install
+
+APPLEPAY_PHP_INI=/app/.heroku/php/etc/php/conf.d/200-applepay.ini
+touch $APPLEPAY_PHP_INI
+'extension=applepay.so' | sudo tee $APPLEPAY_PHP_INI
+
