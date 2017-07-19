@@ -1,6 +1,8 @@
 Heroku Buildpack for applepay-php Extension
 ====
 
+The extension can be found at https://github.com/etsy/applepay-php
+
 Installation
 ---
 
@@ -76,7 +78,7 @@ remote: -----> Compressing...
 remote:        Done: 17.8M
 remote: -----> Launching...
 remote:        Released v9
-remote:        https://merchant-com-s-reiss-demo.herokuapp.com/ deployed to Heroku
+remote:        https://*yourapp*.herokuapp.com/ deployed to Heroku
 remote: 
 remote: Verifying deploy... done.
 ```
